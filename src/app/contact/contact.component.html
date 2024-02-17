@@ -1,0 +1,32 @@
+<section>
+    <div class="container">
+        <div class="d-flex justify-content-center align-items-center flex-column py-4">
+            <h3 class="pt-5 mt-5">CONTACT SECTION</h3>
+            <div class="position-relative line my-3">
+                <i class="fa-solid fa-star mx-2"></i>
+            </div>
+            <div class="w-50 py-5">
+                <div class="position-relative">
+                    <label [class]="nameData ? 'bottom-100' : 'bottom-0'" for="userName" class="ms-2 text-mainColor">userName</label>
+                    <input (keyup)="showNameLabel($event)"  id="userName" type="text" class="form-control my-4 border-0 border-bottom" placeholder="userName">
+                </div>
+
+                <div class="position-relative">
+                    <label [class]="ageData ? 'bottom-100' : 'bottom-0'" for="userAge" class="ms-2 text-mainColor">userAge</label>
+                    <input (keyup)="showAgeLabel($event)"   id="userAge" type="text" class="form-control my-4 border-0 border-bottom" placeholder="userAge">
+                </div>
+
+                <div class="position-relative">
+                    <label [class]="emailData ? 'bottom-100' : 'bottom-0'" for="userEmail" class="ms-2 text-mainColor">userEmail</label>
+                    <input (keyup)="showEmailLabel($event)" id="userEmail" type="text" class="form-control my-4 border-0 border-bottom" placeholder="userEmail">
+                </div>
+
+                <div class="position-relative">
+                    <label [class]="passwordData ? 'bottom-100' : 'bottom-0'" for="userPassword" class="ms-2 text-mainColor">userPassword</label>
+                    <input (keyup)="showPasswordLabel($event)"  id="userPassword" type="password" class="form-control my-4 border-0 border-bottom" placeholder="userPassword">    
+                </div> 
+                <button class="btn  btn-mainColor text-white">Send Message</button>
+            </div>
+        </div>
+    </div>
+</section>

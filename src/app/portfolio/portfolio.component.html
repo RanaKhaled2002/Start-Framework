@@ -1,0 +1,31 @@
+<section>
+    <div class="container">
+        <div class="py-5 d-flex justify-content-center align-items-center flex-column">
+            <h3 class="pt-5 mt-5">PORTFOLIO COMPONENT</h3>
+            <div class="position-relative line my-3">
+                <i class="fa-solid fa-star mx-2"></i>
+            </div>
+            <div class="row g-5">
+                <div *ngFor="let image of imagePath" class="col-lg-4">
+                    <div  class="position-relative main" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img class="img-fluid rounded-3" [src]="image" alt="house">
+                        <div (click)="clickImage(image)" class="layer position-absolute d-flex justify-content-center align-items-center rounded-3">
+                            <i class="fa-solid fa-plus fa-4x text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  
+  <!-- Modal -->
+<div class="modal fade bg-layer" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img class="img-fluid" [src]="currentPathImage" alt="">
+            </div>
+        </div>
+    </div>
+</div>

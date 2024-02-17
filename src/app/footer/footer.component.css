@@ -1,0 +1,19 @@
+section
+{
+    background-color: #2C3E50;
+}
+
+i
+{
+    width: 35px;
+    height: 35px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-footer
+{
+    background-color: #1A252F;
+}

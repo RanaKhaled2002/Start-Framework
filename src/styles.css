@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+.line::before
+{
+    content: "";
+    position:absolute;
+    top: 10px;
+    right: 40px;
+    width: 70px;
+    height: 3px;
+    background-color: white;
+}
+.line::after
+{
+    content: "";
+    position:absolute;
+    top: 10px;
+    left: 40px;
+    width: 70px;
+    height: 3px;
+    background-color: white;
+}

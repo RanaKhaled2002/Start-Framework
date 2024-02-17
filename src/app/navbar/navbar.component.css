@@ -1,0 +1,11 @@
+nav
+{
+    background-color: #2C3E50;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.bg-main
+{
+    background-color: #1ABC9C;
+}
